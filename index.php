@@ -400,7 +400,7 @@
                   <?php
                     foreach ($arr_json as $key => $value) {
                   ?>
-                  <h6 class="mt-1 mb-1"><?=$value['nama']?></h6>
+                  <h6 class="mt-1 mb-1" style="color:#7c95af;font-size:17px;"><?=$value['nama']?></h6>
 
                   <?=$value['doa']?>
 
