@@ -433,9 +433,9 @@
     <!-- Start Navbar -->
     <div class="button-menu visible-xs shadow-lg py-3 fixed-bottom">
       <div class="asd">
-        <div class="button-menu-item col-md-12">
+        <div class="button-menu-item">
           <a
-            class="text-black text-decoration-none"
+            class="text-black text-decoration-none mx-4"
             onclick="music();"
             href="#malik"
             ><i class="fal fa-baby"></i><br />
