@@ -442,7 +442,7 @@
             <div>Profile</div>
           </a>
           <a
-            class="text-black text-decoration-none mx-4"
+            class="text-black text-decoration-none mx-5"
             onclick="music();"
             href="#acara"
             ><i class="fal fa-calendar"></i><br />
@@ -471,7 +471,7 @@
             <div>Kado Aqiqah</div>
           </a> -->
           <a
-            class="text-black text-decoration-none mx-4"
+            class="text-black text-decoration-none mx-5"
             onclick="music();"
             href="#doa"
             ><i class="fal fa-envelope"></i><br />
