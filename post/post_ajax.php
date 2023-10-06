@@ -13,10 +13,10 @@ $old_replace = str_replace(array('[', ']'), '', $dataold);
 $create_waktu = date('d F Y - H:i:s a', time());
 
 $data['nama']       = $_POST['nama'];
-$data['email']      = $_POST['email'];
-$data['handphone']  = $_POST['handphone'];
+// $data['email']      = $_POST['email'];
+// $data['handphone']  = $_POST['handphone'];
 $data['doa']        = $_POST['doa'];
-$data['hadir']      = $_POST['hadir'];
+// $data['hadir']      = $_POST['hadir'];
 $data['datetime']   = $create_waktu;
 $data['ip_address'] = $_SERVER['REMOTE_ADDR'];
 

@@ -345,19 +345,20 @@
                         required="required"
                       ></textarea>
                     </div>
-                    <div class="text-left">
+
+                    <!-- <div class="text-left">
                       <label for="" class=""
                         >Apakah anda akan hadir ?</label
                       >
                     </div>
-
                     <div class="form-group text-left">
                       <select class="form-control" name="hadir" id="" required>
                         <option value="">-</option>
                         <option value="1">Saya Akan hadir</option>
                         <option value="2">Saya Tidak Akan hadir</option>
                       </select>
-                    </div>
+                    </div> -->
+
                     <button
                       type="submit"
                       id="rsvp-form-submit"
@@ -393,16 +394,18 @@
                   <h3 class="text-black">Doa & Ucapan</h3>
                 </div>
 
-
-
                 <div class="p-4 card hover text-center mt-4 data-ucapan">
 
                   <?php
                     foreach ($arr_json as $key => $value) {
                   ?>
-                  <h6 class="mt-1 mb-1" style="color:#7c95af;font-size:17px;"><?=$value['nama']?></h6>
+                  <h6 class="mt-1 mb-1" style="color:#7c95af!important;font-size:17px;text-align:start;">
+                    <i class="fal fa-user-circle" style="color:#7c95af!important;font-weight:bold!important;"></i> <?=$value['nama']?>
+                  </h6>
 
-                  <?=$value['doa']?>
+                  <div style="text-align:justify;text-align-last: right;">
+                    <?=$value['doa']?>
+                  </div>
 
                   <div class="mt-2" style="font-size:10.5px;color:#999;text-align:end;">
                     <!-- Selasa, 27 Oktober 2025 10:53 WIB -->
