@@ -287,7 +287,7 @@
               <!-- Start Doa -->
               <div class="mt-5" id="doa">&nbsp;</div>
               <div class="text-center">
-                <h3 class="text-black">Doa buat Malik</h3>
+                <h3 class="text-black">Kirim Do'a buat Malik</h3>
                 Tuliskan suatu ucapan berupa harapan ataupun doa
               </div>
               <div class="mt-4">
