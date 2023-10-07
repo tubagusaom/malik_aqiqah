@@ -146,14 +146,14 @@
                   <i class="fa fa-map-marker"></i> Buka Di Google Maps
                 </a>
               </div>
-              <div class="bg-white text-center radius-10 card-undangan mt-4">
+              <div class="text-center radius-10 card-undangan mt-4">
                 <div class="p-3 bg-white text-center radius-10 card-undangan" id="map">
                   <div class="mapouter">
                     <div class="gmap_canvas">
                       <iframe
                         width="600"
                         height="500"
-                        style="width: 100%; height: 500px"
+                        style="width: 100%; height: 300px"
                         id="gmap_canvas"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.587959259328!2d106.89145029999999!3d-6.4469148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eba8df082acf%3A0x49fc17425d0785c5!2sPom%20Mini%20Mia!5e0!3m2!1sid!2sru!4v1696563189291!5m2!1sid!2sru"
                         frameborder="0"
@@ -278,8 +278,8 @@
               <!-- End Kado -->
 
               <!-- Start Doa -->
-              <div class="mt-5" id="doa">&nbsp;</div>
-              <div class="text-center">
+              <!-- <div class="mt-5" id="doa">&nbsp;</div> -->
+              <div class="text-center mt-5 pt-2" id="doa">
                 <h3 class="text-black">Kirim Do'a buat Malik</h3>
                 Tuliskan suatu ucapan berupa harapan ataupun doa
               </div>
@@ -434,23 +434,23 @@
             class="text-black text-decoration-none mx-4"
             onclick="music();"
             href="#malik"
-            ><i class="fal fa-baby"></i><br />
-            <div>Profile</div>
+            ><i class="fal fa-baby font-bold color-blue"></i><br />
+            <div class="color-blue">Malik</div>
           </a>
           <a
             class="text-black text-decoration-none mx-5"
             onclick="music();"
             href="#acara"
-            ><i class="fal fa-calendar"></i><br />
-            <div>Acara</div>
+            ><i class="fal fa-calendar font-bold color-blue"></i><br />
+            <div class="color-blue">Acara</div>
           </a>
           <a
             class="text-black text-decoration-none mx-4"
             onclick="music();"
             href="#peta"
-            ><i class="fal fa-map-marked"></i><br />
+            ><i class="fal fa-map-marked font-bold color-blue"></i><br />
 
-            <div>Lokasi</div>
+            <div class="color-blue">Lokasi</div>
           </a>
           <!-- <a
             class="text-black text-decoration-none mx-3"
@@ -470,8 +470,8 @@
             class="text-black text-decoration-none mx-5"
             onclick="music();"
             href="#doa"
-            ><i class="fal fa-envelope"></i><br />
-            <div>Do'a</div>
+            ><i class="fal fa-envelope font-bold color-blue"></i><br />
+            <div class="color-blue">Do'a</div>
           </a>
         </div>
       </div>

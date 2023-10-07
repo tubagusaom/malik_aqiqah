@@ -136,3 +136,10 @@ a.instagram:hover , .fa-instagram:hover {
     margin-top: 5px;
     /* overflow: scroll; */
 }
+
+.color-blue {
+  color: #01A1C8!important;
+}
+.font-bold {
+  font-weight: bold!important;
+}
