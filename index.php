@@ -12,8 +12,8 @@
     <meta name="robots" content="index,follow" />
 
     <title>Malik - Aqiqah</title>
-    <meta name="description" content="Aqiqah Malik. Silakan berikan doa dan harapan untuk Malik" />
-    <meta name="keywords" content="Aqiqah Malik, Website Aqiqah, Aqiqah" />
+    <meta name="description" content="Silakan berikan doa dan harapan untuk Malik" />
+    <meta name="keywords" content="Malik, Aqiqah Malik, Website Aqiqah, Aqiqah" />
     <meta name="author" content="terabytee" />
 
     <!-- Favicon -->
@@ -24,7 +24,7 @@
     <meta property="og:site_name" content="Malik" /> <!-- website name -->
     <meta property="og:site" content="https://malik.terabytee.my.id/" /> <!-- website link -->
     <meta property="og:title" content="Malik - Aqiqah"/> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="Aqiqah Malik. Silakan berikan doa dan harapan untuk Malik" /> <!-- description shown in the actual shared post -->
+    <meta property="og:description" content="Silakan berikan doa dan harapan untuk Malik" /> <!-- description shown in the actual shared post -->
     <meta property="og:image" content="https://malik.terabytee.my.id/assets/img/icon_malik.png" /> <!-- image link, make sure it's jpg -->
     <meta property="og:url" content="https://malik.terabytee.my.id/" /> <!-- where do you want your post to link to -->
     <meta name="twitter:card" content="https://malik.terabytee.my.id/assets/img/icon_malik.png"> <!-- to have large image post format in Twitter -->
@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="assets/css/aos.css"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/galery.css" />
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -171,33 +172,137 @@
               <!-- End Map -->
 
               <!-- Start Galeri -->
-              <!-- <div class="text-center mt-5" id="galeri">
+              <div class="mt-2" id="galeri">&nbsp;</div>
+              <div class="text-center" id="galeri">
                 <h3 class="text-black">Galeri Foto</h3>
-                Sekilas foto-foto bahagia
+                Sekilas foto-foto Malik
               </div>
 
-              <div
-                class="bg-sky text-center radius-10 card-undangan hover mt-4"
-              >
+              <div class="container mt-3">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 15</div>
+                  <img src="assets/img/foto/malik-4.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 15</div>
+                  <img src="assets/img/foto/malik-2.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 15</div>
+                  <img src="assets/img/foto/malik-3.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 15</div>
+                  <img src="assets/img/foto/malik-1.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 15</div>
+                  <img src="assets/img/foto/malik-5.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 15</div>
+                  <img class="radius-10" src="assets/img/foto/malik-1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 15</div>
+                  <img src="assets/img/foto/malik-2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">8 / 15</div>
+                  <img src="assets/img/foto/malik-3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">9 / 15</div>
+                  <img src="assets/img/foto/malik-4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">10 / 15</div>
+                  <img src="assets/img/foto/malik-5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">11 / 15</div>
+                  <img src="assets/img/foto/malik-6.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">12 / 15</div>
+                  <img src="assets/img/foto/malik-7.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">13 / 15</div>
+                  <img src="assets/img/foto/malik-8.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">14 / 15</div>
+                  <img src="assets/img/foto/malik-9.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">15 / 15</div>
+                  <img src="assets/img/foto/malik-10.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <!-- <div class="caption-container">
+                  <p id="caption"></p>
+                </div> -->
+
+                <!-- <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/foto/malik-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/foto/malik-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/foto/malik-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/foto/malik-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/foto/malik-5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/foto/malik-6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                  </div>
+                </div> -->
+              </div>
+
+              <!-- <div class="bg-sky text-center radius-10 card-undangan hover mt-4">
                 <img
-                  src="img/pexels-laura-garcia-3617844.jpg"
+                  src="assets/img/baby_malik.png"
                   class="img-fluid w-100 radius-10"
                   alt=""
                 />
                 <div class="p-3 bg-primary">
                   <strong class="text-white">Selamat Datang Tubagus Malik Suma Wijaya</strong>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="bg-sky text-center radius-10 card-undangan hover mt-4">
-                <img src="https://sulaiman.diaqiqah.com/dirmember/00000001/sulaiman/photo-1-1-l-202209271000.jpg"
+              <!-- <div class="bg-sky text-center radius-10 card-undangan hover mt-4">
+                <img src="assets/img/baby_malik.png"
                 class="img-fluid w-100 radius-10"
-                alt=""/>
+                alt=""/> -->
 
-                <div class="p-3 bg-primary">
+                <!-- <div class="p-3 bg-primary">
                   <strong class="text-white">Selamat Datang Tubagus Malik Suma Wijaya</strong>
-                </div>
-            </div> -->
+                </div> -->
+            </div>
 
               <!-- <div class="text-center mt-5" id="galeri">
                 <h3 class="text-black">Galeri Video</h3>
@@ -439,7 +544,7 @@
             <div class="color-blue">Malik</div>
           </a>
           <a
-            class="text-black text-decoration-none mx-5"
+            class="text-black text-decoration-none mx-4"
             onclick="music();"
             href="#acara"
             ><i class="fal fa-calendar color-blue"></i><br />
@@ -453,13 +558,15 @@
 
             <div class="color-blue">Lokasi</div>
           </a>
-          <!-- <a
-            class="text-black text-decoration-none mx-3"
+
+          <a
+            class="text-black text-decoration-none mx-2"
             onclick="music();"
             href="#galeri"
-            ><i class="fal fa-images"></i><br />
-            <div>Galery</div>
-          </a> -->
+            ><i class="fal fa-images color-blue"></i><br />
+            <div class="color-blue">Galery</div>
+          </a>
+
           <!-- <a
             class="text-black text-decoration-none mx-3"
             onclick="music();"
@@ -468,7 +575,7 @@
             <div>Kado Aqiqah</div>
           </a> -->
           <a
-            class="text-black text-decoration-none mx-5"
+            class="text-black text-decoration-none mx-4"
             onclick="music();"
             href="#doa"
             ><i class="fal fa-envelope color-blue"></i><br />
