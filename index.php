@@ -66,7 +66,7 @@
                 <h6 class="my-3" fadeinup="" wow="" style="color: #000000">Tera dan Byte</h6>
                 <div class="text-black" fadeinup="" wow="">di Netherland</div> -->
 
-                <a href="#acara" class="btn btn-primary mt-5" onclick="music();" >Buka Undangan</a>
+                <a href="#malik" class="btn btn-primary mt-5" onclick="music();" >Lihat Acara</a>
               </div>
             </div>
           <!-- </div> -->
@@ -98,7 +98,7 @@
                       />
                     </div>
                     <h5 class="text-black mt-4">Tubagus Malik Suma Wijaya</h5>
-                    <p>Buah hati dari <br> Tubagus Aom dan Mia Amelia</p>
+                    <p>Buah hati dari <br> Aom & Mia</p>
                     <p>
                       Kami berdoa agar Malik senantiasa bahagia
                       dan bermanfaat bagi bangsa dan agama kelak.
@@ -109,7 +109,7 @@
               <!-- End Aqiqah -->
 
               <!-- Start Undangan -->
-              <div class="text-center mt-5" id="acara">&nbsp;</div>
+              <div class="mt-5" id="acara">&nbsp;</div>
               <div class="text-center">
                 <h3 class="text-black">Acara</h3>
                 Bahagia rasanya apabila anda berkenan hadir dan memberikan doa
