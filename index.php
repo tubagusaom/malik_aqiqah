@@ -179,7 +179,7 @@
               </div>
 
               <div class="container mt-3">
-                <div class="mySlides">
+                <div class="mySlides" style="display:block;">
                   <div class="numbertext">1 / 15</div>
                   <img src="assets/img/foto/malik-4.jpeg" style="width:100%">
                 </div>
