@@ -125,7 +125,7 @@
                 </div>
                 <div class="mt-4">
                   <a
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Aqiqahan+Malik&amp;dates=20231012T193000%2F20231013T235900&amp;location=Jl. Caringin Desa Karanggan Muda No.70 RT 01 RW 04 Gunung Putri, Bogor, Jawa Barat, 16960"
+                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Aqiqahan+Malik&amp;dates=20231012T193000%2F20231012T235900&amp;location=Jl. Caringin Desa Karanggan Muda No.70 RT 01 RW 04 Gunung Putri, Bogor, Jawa Barat, 16960"
                     class="btn btn-primary btn-sm"
                     target="_blank"
                     ><i class="fal fa-calendar mr-2" style="font-weight:bold;"></i>Tambahkan Ke Kalender</a
