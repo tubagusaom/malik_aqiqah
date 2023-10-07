@@ -12,7 +12,7 @@
     <meta name="robots" content="index,follow" />
 
     <title>Malik - Aqiqah</title>
-    <meta name="description" content="Silakan berikan doa dan harapan untuk Malik" />
+    <meta name="description" content="Silakan berikan doa untuk Malik" />
     <meta name="keywords" content="Malik, Aqiqah Malik, Website Aqiqah, Aqiqah" />
     <meta name="author" content="terabytee" />
 
@@ -24,7 +24,7 @@
     <meta property="og:site_name" content="Malik" /> <!-- website name -->
     <meta property="og:site" content="https://malik.terabytee.my.id/" /> <!-- website link -->
     <meta property="og:title" content="Malik - Aqiqah"/> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="Silakan berikan doa dan harapan untuk Malik" /> <!-- description shown in the actual shared post -->
+    <meta property="og:description" content="Silakan berikan doa untuk Malik" /> <!-- description shown in the actual shared post -->
     <meta property="og:image" content="https://malik.terabytee.my.id/assets/img/icon_malik.png" /> <!-- image link, make sure it's jpg -->
     <meta property="og:url" content="https://malik.terabytee.my.id/" /> <!-- where do you want your post to link to -->
     <meta name="twitter:card" content="https://malik.terabytee.my.id/assets/img/icon_malik.png"> <!-- to have large image post format in Twitter -->
