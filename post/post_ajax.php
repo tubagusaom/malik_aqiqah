@@ -1,4 +1,38 @@
 <?php
+ini_set('date.timezone', 'Asia/Jakarta');
+// $create_waktu = date('N, d n Y - H:i:s a', time());
+$create_waktu = date('N d n Y H:i:s a');
+
+$hari = array (
+  1 => 'Senin',
+  2 => 'Selasa',
+  3 => 'Rabu',
+  4 => 'Kamis',
+  5 => 'Jumat',
+  6 => 'Sabtu',
+  7 => 'Minggu'
+);
+
+$bulan = array (
+  1 => 'Januari',
+  2 => 'Februari',
+  3 => 'Maret',
+  4 => 'April',
+  5 => 'Mei',
+  6 => 'Juni',
+  7 => 'Juli',
+  8 => 'Agustus',
+  9 => 'September',
+  10 => 'Oktober',
+  11 => 'November',
+  12 => 'Desember'
+);
+
+$pecah_waktu = explode(' ', $create_waktu);
+
+$waktu = $hari[$pecah_waktu[0]] . ", " . $pecah_waktu[1] . " " . $bulan[$pecah_waktu[2]] . " " . $pecah_waktu[3] . " - " . $pecah_waktu[4] . " " . $pecah_waktu[5];
+
+
 
 $file = 'doa.php';
 
@@ -10,14 +44,12 @@ fclose($myfile);
 
 $old_replace = str_replace(array('[', ']'), '', $dataold);
 
-$create_waktu = date('d F Y - H:i:s a', time());
-
 $data['nama']       = $_POST['nama'];
 // $data['email']      = $_POST['email'];
 // $data['handphone']  = $_POST['handphone'];
 $data['doa']        = $_POST['doa'];
 // $data['hadir']      = $_POST['hadir'];
-$data['datetime']   = $create_waktu;
+$data['datetime']   = $waktu;
 $data['ip_address'] = $_SERVER['REMOTE_ADDR'];
 
 $convjsn = json_encode($data);

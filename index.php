@@ -403,6 +403,7 @@
                   <div class="mt-2" style="font-size:10.5px;color:#999;text-align:end;">
                     <!-- Selasa, 27 Oktober 2025 10:53 WIB -->
                     <?=$value['datetime']?>
+
                   </div><hr/>
                   <?php } ?>
 
@@ -492,6 +493,7 @@
     <script src="assets/js/function.js"></script>
     <script src="assets/js/music.js"></script>
     <script src="assets/js/mute.js"></script>
+    <script src="assets/js/timeindo.js"></script>
 
   </body>
   <!-- End Diaqiqah -->
