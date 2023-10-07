@@ -59,7 +59,7 @@
                 </div>
                 <h1 class="mt-4 fonts aos-init aos-animate" data-aos="fade-up">Malik</h1>
                 <div class="my-3">Akan Segera Melangsungkan Aqiqah</div>
-                <h5 class="mb-0">Jum'at, 13 Oktober 2023</h5>
+                <h5 class="mb-0">Kamis, 12 Oktober 2023</h5>
               </div>
               <div class="btn-undangan">
                 <!-- <small class="text-black" fadeinup="" wow="">Untuk</small>
@@ -118,14 +118,14 @@
                 <h6 class="mb-0">Aqiqahan</h6>
                 <hr class="my-4" />
                 <h5 class="mb-0 text-black">19:00 - selesai</h5>
-                <div>Jum'at, 13 Oktober 2023</div>
+                <div>Kamis, 12 Oktober 2023</div>
                 <div class="mt-4">
                   Jl. Caringin Desa Karanggan Muda <br>
                   Gunung Putri, Bogor, Jawa Barat, 16960
                 </div>
                 <div class="mt-4">
                   <a
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Aqiqahan+Malik&amp;dates=20231013T193000%2F20231013T235900&amp;location=Jl. Caringin Desa Karanggan Muda No.70 RT 01 RW 04 Gunung Putri, Bogor, Jawa Barat, 16960"
+                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Aqiqahan+Malik&amp;dates=20231012T193000%2F20231013T235900&amp;location=Jl. Caringin Desa Karanggan Muda No.70 RT 01 RW 04 Gunung Putri, Bogor, Jawa Barat, 16960"
                     class="btn btn-primary btn-sm"
                     target="_blank"
                     ><i class="fal fa-calendar mr-2" style="font-weight:bold;"></i>Tambahkan Ke Kalender</a
