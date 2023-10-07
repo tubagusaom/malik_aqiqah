@@ -111,7 +111,7 @@
               <!-- Start Undangan -->
               <div class="text-center mt-5" id="acara">&nbsp;</div>
               <div class="text-center">
-                <h3 class="text-black">Undangan dan Acara</h3>
+                <h3 class="text-black">Acara</h3>
                 Bahagia rasanya apabila anda berkenan hadir dan memberikan doa
               </div>
               <div class="p-4 card hover bg-white text-center radius-10 mt-4">
@@ -120,7 +120,7 @@
                 <h5 class="mb-0 text-black">19:00 - selesai</h5>
                 <div>Jum'at, 13 Oktober 2023</div>
                 <div class="mt-4">
-                  Jl. Caringin Desa Karanggan Muda No.70 RT 01/04 <br>
+                  Jl. Caringin Desa Karanggan Muda <br>
                   Gunung Putri, Bogor, Jawa Barat, 16960
                 </div>
                 <div class="mt-4">
@@ -128,7 +128,7 @@
                     href="http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Aqiqahan+Malik&amp;dates=20231013T193000%2F20231013T235900&amp;location=Jl. Caringin Desa Karanggan Muda No.70 RT 01 RW 04 Gunung Putri, Bogor, Jawa Barat, 16960"
                     class="btn btn-primary btn-sm"
                     target="_blank"
-                    ><i class="fal fa-calendar mr-2"></i>Tambahkan Ke Kalender</a
+                    ><i class="fal fa-calendar mr-2" style="font-weight:bold;"></i>Tambahkan Ke Kalender</a
                   >
                 </div>
               </div>
@@ -142,19 +142,12 @@
                   Anda dapat menuju lokasi acara kami dengan bantuan peta
                   dibawah ini. Atau klik tombol di bawah ini
                 </p>
-                <a
-                  href="https://maps.app.goo.gl/xVbJMCdntrU2dfzYA"
-                  class="btn btn-primary"
-                  > <i class="fa fa-map-marker"></i> Buka Di Google Maps </a
-                >
+                <a href="https://maps.app.goo.gl/xVbJMCdntrU2dfzYA" class="btn btn-primary">
+                  <i class="fa fa-map-marker"></i> Buka Di Google Maps
+                </a>
               </div>
-              <div
-                class="p-3 bg-white text-center radius-10 card-undangan mt-4"
-              >
-                <div
-                  class="p-3 bg-white text-center radius-10 card-undangan"
-                  id="map"
-                >
+              <div class="bg-white text-center radius-10 card-undangan mt-4">
+                <div class="p-3 bg-white text-center radius-10 card-undangan" id="map">
                   <div class="mapouter">
                     <div class="gmap_canvas">
                       <iframe
