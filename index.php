@@ -82,8 +82,8 @@
             <div class="container">
 
               <!-- Start Aqiqah -->
-              <!-- <div id="mempelai">&nbsp;</div> -->
-              <div class="text-center" id="malik">
+              <div class="mt-2" id="malik">&nbsp;</div>
+              <div class="text-center">
                 <h3 class="text-black">Assalamu'alaikum Wr Wb</h3>
                 Dengan rahmat Allah yang maha kuasa <br> insha Allah kami akan melangsungkan Aqiqah
                 <h5 class="mb-0 text-black my-3" id="demo"></h5>
