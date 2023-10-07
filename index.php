@@ -434,21 +434,21 @@
             class="text-black text-decoration-none mx-4"
             onclick="music();"
             href="#malik"
-            ><i class="fal fa-baby font-bold color-blue"></i><br />
+            ><i class="fal fa-baby color-blue"></i><br />
             <div class="color-blue">Malik</div>
           </a>
           <a
             class="text-black text-decoration-none mx-5"
             onclick="music();"
             href="#acara"
-            ><i class="fal fa-calendar font-bold color-blue"></i><br />
+            ><i class="fal fa-calendar color-blue"></i><br />
             <div class="color-blue">Acara</div>
           </a>
           <a
             class="text-black text-decoration-none mx-4"
             onclick="music();"
             href="#peta"
-            ><i class="fal fa-map-marked font-bold color-blue"></i><br />
+            ><i class="fal fa-map-marked color-blue"></i><br />
 
             <div class="color-blue">Lokasi</div>
           </a>
@@ -470,7 +470,7 @@
             class="text-black text-decoration-none mx-5"
             onclick="music();"
             href="#doa"
-            ><i class="fal fa-envelope font-bold color-blue"></i><br />
+            ><i class="fal fa-envelope color-blue"></i><br />
             <div class="color-blue">Do'a</div>
           </a>
         </div>
