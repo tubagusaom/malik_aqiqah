@@ -473,17 +473,17 @@
 
               <?php
 
-              if(!empty( $_SERVER [ 'HTTP_CLIENT_IP' ])){
-                  //ip dari berbagi internet
-                  $ipxx  =  $_SERVER [ 'HTTP_CLIENT_IP' ];
-              }elseif(!empty( $_SERVER [ 'HTTP_X_FORWARDED_FOR' ])){
-                  //ip pass dari proxy
-                  $ipxx  =  $_SERVER [ 'HTTP_X_FORWARDED_FOR' ];
-              }else{
-                  $ipxx  =  $_SERVER [ 'REMOTE_ADDR' ];
-              }
-
-              echo "$ipxx";
+              // if(!empty( $_SERVER [ 'HTTP_CLIENT_IP' ])){
+              //     //ip dari berbagi internet
+              //     $ipxx  =  $_SERVER [ 'HTTP_CLIENT_IP' ];
+              // }elseif(!empty( $_SERVER [ 'HTTP_X_FORWARDED_FOR' ])){
+              //     //ip pass dari proxy
+              //     $ipxx  =  $_SERVER [ 'HTTP_X_FORWARDED_FOR' ];
+              // }else{
+              //     $ipxx  =  $_SERVER [ 'REMOTE_ADDR' ];
+              // }
+              //
+              // echo "$ipxx";
 
               $file = 'post/doa.php';
 
