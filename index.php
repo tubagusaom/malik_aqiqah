@@ -485,6 +485,9 @@
               //
               // echo "$ipxx";
 
+              $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+              echo "$hostname";
+
               $file = 'post/doa.php';
 
               // $dataold = @readfile(($newfile));
