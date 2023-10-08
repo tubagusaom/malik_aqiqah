@@ -29,9 +29,18 @@ $bulan = array (
 );
 
 $pecah_waktu = explode(' ', $create_waktu);
-
 $waktu = $hari[$pecah_waktu[0]] . ", " . $pecah_waktu[1] . " " . $bulan[$pecah_waktu[2]] . " " . $pecah_waktu[3] . " - " . $pecah_waktu[4] . " " . $pecah_waktu[5];
 
+
+if(!empty( $_SERVER [ 'HTTP_CLIENT_IP' ])){
+    //ip dari berbagi internet
+    $getipxx  =  $_SERVER [ 'HTTP_CLIENT_IP' ];
+}elseif(!empty( $_SERVER [ 'HTTP_X_FORWARDED_FOR' ])){
+    //ip pass dari proxy
+    $getipxx  =  $_SERVER [ 'HTTP_X_FORWARDED_FOR' ];
+}else{
+    $getipxx  =  $_SERVER [ 'REMOTE_ADDR' ];
+}
 
 
 $file = 'doa.php';
@@ -50,7 +59,7 @@ $data['nama']       = $_POST['nama'];
 $data['doa']        = $_POST['doa'];
 // $data['hadir']      = $_POST['hadir'];
 $data['datetime']   = $waktu;
-$data['ip_address'] = $_SERVER['REMOTE_ADDR'];
+$data['ip_address'] = $getipxx;
 
 $convjsn = json_encode($data);
 
