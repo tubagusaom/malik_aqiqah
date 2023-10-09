@@ -603,6 +603,18 @@
 
     <script type="text/javascript">
 
+      var cookies = navigator.cookieEnabled;
+      var browserLanguage = navigator.browserLanguage;
+      var language = navigator.language;
+      var platform = navigator.platform;
+      var connectionSpeed = navigator.connectionSpeed;
+      var userAgent = navigator.userAgent;
+      var webdriver = navigator.webdriver;
+      var geolocation = navigator.geolocation;
+
+      // alert(platform);
+
+
       let slideIndex = 1;
       showSlides(slideIndex);
 
