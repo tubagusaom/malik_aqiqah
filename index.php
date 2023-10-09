@@ -239,27 +239,27 @@
 
                 <div class="mySlides">
                   <div class="numbertext">11 / 15</div>
-                  <img src="assets/img/foto/malik-6.jpg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-6.jpg','jpg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">12 / 15</div>
-                  <img src="assets/img/foto/malik-7.jpg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-7.jpg','jpg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">13 / 15</div>
-                  <img src="assets/img/foto/malik-8.jpg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-8.jpg','jpg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">14 / 15</div>
-                  <img src="assets/img/foto/malik-9.jpg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-9.jpg','jpg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">15 / 15</div>
-                  <img src="assets/img/foto/malik-10.jpg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-10.jpg','jpg')?>" style="width:100%">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
