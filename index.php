@@ -43,6 +43,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
 
+    <?php include "library/terabytee.php"; ?>
+
   </head>
 
   <!-- Start Diaqiqah -->
@@ -178,55 +180,61 @@
                 Sekilas foto-foto Malik
               </div>
 
+              <?php
+                $b64image = base64_encode(file_get_contents('assets/img/foto/malik-4.jpeg'));
+
+                // echo $b64image;
+              ?>
+
               <div class="container mt-3">
                 <div class="mySlides">
                   <div class="numbertext">1 / 15</div>
-                  <img src="assets/img/foto/malik-4.jpeg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-4.jpeg','jpeg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">2 / 15</div>
-                  <img src="assets/img/foto/malik-2.jpeg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-2.jpeg','jpeg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">3 / 15</div>
-                  <img src="assets/img/foto/malik-3.jpeg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-3.jpeg','jpeg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">4 / 15</div>
-                  <img src="assets/img/foto/malik-1.jpeg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-1.jpeg','jpeg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">5 / 15</div>
-                  <img src="assets/img/foto/malik-5.jpeg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-5.jpeg','jpeg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">6 / 15</div>
-                  <img class="radius-10" src="assets/img/foto/malik-1.jpg" style="width:100%">
+                  <img class="radius-10" src="<?=base64_encode_image('malik-1.jpg','jpg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">7 / 15</div>
-                  <img src="assets/img/foto/malik-2.jpg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-2.jpg','jpg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">8 / 15</div>
-                  <img src="assets/img/foto/malik-3.jpg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-3.jpg','jpg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">9 / 15</div>
-                  <img src="assets/img/foto/malik-4.jpg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-4.jpg','jpg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">10 / 15</div>
-                  <img src="assets/img/foto/malik-5.jpg" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-5.jpg','jpg')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
@@ -389,9 +397,6 @@
                 Tuliskan suatu ucapan berupa harapan ataupun doa
 
                 <?php
-
-
-                  include "library/terabytee.php";
 
                   $selfget = get_self();
                   $self_rplc = str_replace("index.php","kirim-doa",$selfget);
