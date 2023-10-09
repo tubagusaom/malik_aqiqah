@@ -612,7 +612,7 @@
       var webdriver = navigator.webdriver;
       var geolocation = navigator.geolocation;
 
-      // alert(platform);
+      alert(platform);
 
 
       let slideIndex = 1;
