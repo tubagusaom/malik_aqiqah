@@ -387,11 +387,30 @@
               <div class="text-center mt-5 pt-2" id="doa">
                 <h3 class="text-black">Kirim Do'a buat Malik</h3>
                 Tuliskan suatu ucapan berupa harapan ataupun doa
+
+                <?php
+
+
+                  include "library/terabytee.php";
+
+                  $selfget = get_self();
+                  $self_rplc = str_replace("index.php","kirim-doa",$selfget);
+
+                  $encrypted = encrypt($self_rplc);
+                  $decrypted = decrypt($encrypted);
+
+                  $url_encode = url_encode($self_rplc);
+                  $url_decode = url_decode($url_encode);
+
+                  // echo ($self_rplc);
+                ?>
               </div>
               <div class="mt-4">
                 <div class="text-center">
-                  <form action="post/post_ajax.php"
+                  <form
+                    action="<?=htmlspecialchars($self_rplc)?>"
                     method="POST"
+                    class="form_doa"
                     autocomplete="off"
                   >
                     <div class="form-group">
@@ -460,6 +479,7 @@
                     <button
                       type="submit"
                       id="rsvp-form-submit"
+                      name="rsvp-form-submit"
                       value="Kirim Doa dan Ucapan"
                       class="btn btn-primary btn-block py-2 mt-4"
                     >
