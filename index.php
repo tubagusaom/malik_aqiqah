@@ -58,7 +58,7 @@
             <div class="text-center card p-4">
               <div class="mb-3" style="color: #093b58">
                 <div class="text-center">
-                  <img src="assets/img/logo-malik.png" class="img-fluid w-50"/>
+                  <img src="<?=base64_encode_image('logo-malik.png','png','assets/img/')?>" class="img-fluid w-50"/>
                 </div>
                 <h1 class="mt-4 fonts aos-init aos-animate" data-aos="fade-up">Malik</h1>
                 <div class="my-3">Akan Segera Melangsungkan Aqiqah</div>
@@ -96,7 +96,7 @@
                   <div class="card hover text-center p-3">
                     <div class="text-center">
                       <img
-                        src="assets/img/baby_malik.png"
+                        src="<?=base64_encode_image('baby_malik.png','png','assets/img/')?>"
                         class="img-fluid w-50"
                       />
                     </div>
@@ -199,57 +199,57 @@
               <div class="container mt-3">
                 <div class="mySlides">
                   <div class="numbertext">1 / 15</div>
-                  <img src="<?=base64_encode_image('malik-4.jpeg','jpeg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-4.jpeg','jpeg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">2 / 15</div>
-                  <img src="<?=base64_encode_image('malik-2.jpeg','jpeg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-2.jpeg','jpeg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">3 / 15</div>
-                  <img src="<?=base64_encode_image('malik-3.jpeg','jpeg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-3.jpeg','jpeg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">4 / 15</div>
-                  <img src="<?=base64_encode_image('malik-1.jpeg','jpeg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-1.jpeg','jpeg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">5 / 15</div>
-                  <img src="<?=base64_encode_image('malik-5.jpeg','jpeg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-5.jpeg','jpeg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">6 / 15</div>
-                  <img class="radius-10" src="<?=base64_encode_image('malik-1.jpg','jpg')?>" style="width:100%">
+                  <img class="radius-10" src="<?=base64_encode_image('malik-1.jpg','jpg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">7 / 15</div>
-                  <img src="<?=base64_encode_image('malik-2.jpg','jpg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-2.jpg','jpg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">8 / 15</div>
-                  <img src="<?=base64_encode_image('malik-3.jpg','jpg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-3.jpg','jpg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">9 / 15</div>
-                  <img src="<?=base64_encode_image('malik-4.jpg','jpg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-4.jpg','jpg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">10 / 15</div>
-                  <img src="<?=base64_encode_image('malik-5.jpg','jpg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-5.jpg','jpg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">11 / 15</div>
-                  <img src="<?=base64_encode_image('malik-6.jpg','jpg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-6.jpg','jpg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
@@ -259,17 +259,17 @@
 
                 <div class="mySlides">
                   <div class="numbertext">13 / 15</div>
-                  <img src="<?=base64_encode_image('malik-8.jpg','jpg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-8.jpg','jpg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">14 / 15</div>
-                  <img src="<?=base64_encode_image('malik-9.jpg','jpg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-9.jpg','jpg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">15 / 15</div>
-                  <img src="<?=base64_encode_image('malik-10.jpg','jpg')?>" style="width:100%">
+                  <img src="<?=base64_encode_image('malik-10.jpg','jpg','assets/img/foto/')?>" style="width:100%">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>

@@ -4,9 +4,9 @@
     return ($self);
   }
 
-  function base64_encode_image ($filename=string,$filetype=string) {
+  function base64_encode_image ($filename=string,$filetype=string,$filepath=string) {
 
-    $fileimg = 'assets/img/foto/'.$filename;
+    $fileimg = $filepath.$filename;
 
     if ($fileimg) {
         $imgbinary = fread(fopen($fileimg, "r"), filesize($fileimg));
