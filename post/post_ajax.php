@@ -43,35 +43,45 @@ if(!empty( $_SERVER [ 'HTTP_CLIENT_IP' ])){
 }
 
 
-$file = 'doa.php';
+// $file = 'doa.php';
+//
+// // $dataold = @readfile(($newfile));
+//
+// $myfile = fopen($file, "r") or die("Unable to open file!");
+// $dataold =  fread($myfile,filesize($file));
+// fclose($myfile);
+//
+// $old_replace = str_replace(array('[', ']'), '', $dataold);
+//
+// $data['nama']       = $_POST['nama'];
+// // $data['email']      = $_POST['email'];
+// // $data['handphone']  = $_POST['handphone'];
+// $data['doa']        = $_POST['doa'];
+// // $data['hadir']      = $_POST['hadir'];
+// $data['datetime']   = $waktu;
+// $data['ip_address'] = $getipxx;
+//
+// $convjsn = json_encode($data);
+//
+// $php_string  = '['.$convjsn.','.$old_replace.']';
+//
+// $fp = fopen($file, 'w');
+// fwrite($fp, $php_string);
+//
+// fclose($fp);
+//
+// echo "<script type='text/javascript'>alert('Terimakasih ya om dan tante atas doanya 🙂 ');window.location='../#doa'</script>";
+//
+// // var_dump(json_decode($dataold)); die();
 
-// $dataold = @readfile(($newfile));
 
-$myfile = fopen($file, "r") or die("Unable to open file!");
-$dataold =  fread($myfile,filesize($file));
-fclose($myfile);
+$ip = $_SERVER['REMOTE_ADDR'];
+// $ip = '103.213.128.215';
+$locationArray = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip=' . $ip));
+// $locationArray = unserialize(file_get_contents('http://www.geoplugin.net/php.gp'));
+echo 'IP ='.$ip;
+echo '<pre>';
+print_r($locationArray);
 
-$old_replace = str_replace(array('[', ']'), '', $dataold);
-
-$data['nama']       = $_POST['nama'];
-// $data['email']      = $_POST['email'];
-// $data['handphone']  = $_POST['handphone'];
-$data['doa']        = $_POST['doa'];
-// $data['hadir']      = $_POST['hadir'];
-$data['datetime']   = $waktu;
-$data['ip_address'] = $getipxx;
-
-$convjsn = json_encode($data);
-
-$php_string  = '['.$convjsn.','.$old_replace.']';
-
-$fp = fopen($file, 'w');
-fwrite($fp, $php_string);
-
-fclose($fp);
-
-echo "<script type='text/javascript'>alert('Terimakasih ya om dan tante atas doanya 🙂 ');window.location='../#doa'</script>";
-
-// var_dump(json_decode($dataold)); die();
 
 ?>
