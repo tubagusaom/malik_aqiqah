@@ -181,9 +181,19 @@
               </div>
 
               <?php
-                $b64image = base64_encode(file_get_contents('assets/img/foto/malik-4.jpeg'));
+                // $b64image = base64_encode_image('malik-4.jpeg','jpeg');
+                //
+                // $base64size = base64_encode_image_size('malik-1.jpeg');
+                //
+                // $loadimg = decrypt(encrypt($b64image));
 
-                // echo $b64image;
+                // echo resizeImage('resize.php?filename=1.png&w=50&h=50');
+
+
+                // echo $loadimg;
+
+                // var_dump ($loadimg . '<br>' . $base64size);
+
               ?>
 
               <div class="container mt-3">

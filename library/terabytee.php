@@ -4,11 +4,6 @@
     return ($self);
   }
 
-  function b64image($url){
-    $b64image = base64_encode(file_get_contents('assets/img/foto/'.$url));
-    return $b64image;
-  }
-
   function base64_encode_image ($filename=string,$filetype=string) {
 
     $fileimg = 'assets/img/foto/'.$filename;
@@ -18,6 +13,42 @@
         return 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
     }
   }
+
+  function base64_encode_image_size ($filename=string) {
+
+    $fileimg = 'assets/img/foto/'.$filename;
+
+    $size_info1 = getimagesize($fileimg);
+
+    $data       = file_get_contents($fileimg);
+    $size_info2 = getimagesizefromstring($data);
+
+    return $size_info2;
+  }
+
+  function loadImage ($fileimg) {
+    $file = 'assets/img/foto/'.$fileimg;
+
+    $data = getimagesize($file);
+        die(var_export($data));
+    switch($data["mime"]){
+        case "image/jpeg":
+            $im = imagecreatefromjpeg($file);
+            break;
+        case "image/png":
+            $im = imagecreatefrompng($file);
+            break;
+        default:
+            throw new Exception('Img Type not managed');
+    }
+
+    return $im;
+  }
+
+  // function resizeImage($filename){
+  //   $ret = base64_encode(file_get_contents($filename));
+  //   return $ret;
+  // }
 
   function encrypt($string) {
     return strtr(base64_encode($string), '+/=', '-_,');
