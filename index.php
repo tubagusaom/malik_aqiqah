@@ -60,7 +60,7 @@
             <div class="text-center card p-4">
               <div class="mb-3" style="color: #093b58">
                 <div class="text-center">
-                  <img src="assets/img/logo-malik.png" class="img-fluid w-50"/>
+                  <img src="logo-malik.png" class="img-fluid w-50"/>
                 </div>
                 <h1 class="mt-4 fonts aos-init aos-animate" data-aos="fade-up">Malik</h1>
                 <div class="my-3">Akan Segera Melangsungkan Aqiqah</div>
@@ -98,7 +98,7 @@
                   <div class="card hover text-center p-3">
                     <div class="text-center">
                       <img
-                        src="assets/img/baby_malik.png"
+                        src="baby_malik.png"
                         class="img-fluid w-50"
                       />
                     </div>
@@ -182,99 +182,165 @@
                 Sekilas foto-foto Malik
               </div>
 
+              <?php
+                $url = get_self();
+                // $path = 'assets/img/foto/malik-4.jpeg';
+
+                // $urlencode = convertImg($path);
+
+                // echo $urlencode;
+              ?>
+
               <div class="container mt-3">
                 <div class="mySlides">
                   <div class="numbertext">1 / 15</div>
-                  
-                  <img src="assets/img/foto/malik-4.jpeg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-4.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">2 / 15</div>
                   
-                  <img src="assets/img/foto/malik-2.jpeg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-2.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">3 / 15</div>
                   
-                  <img src="assets/img/foto/malik-3.jpeg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-3.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">4 / 15</div>
                   
-                  <img src="assets/img/foto/malik-1.jpeg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-1.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">5 / 15</div>
                   
-                  <img src="assets/img/foto/malik-5.jpeg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-5.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">6 / 15</div>
 
-                  <img src="assets/img/foto/malik-1.jpg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-1.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">7 / 15</div>
                   
-                  <img src="assets/img/foto/malik-2.jpg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-2.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">8 / 15</div>
                   
-                  <img src="assets/img/foto/malik-3.jpg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-3.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">9 / 15</div>
                   
-                  <img src="assets/img/foto/malik-4.jpg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-4.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">10 / 15</div>
                   
-                  <img src="assets/img/foto/malik-5.jpg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-5.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">11 / 15</div>
                   
-                  <img src="assets/img/foto/malik-6.jpg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-6.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">12 / 15</div>
                   
-                  <img src="assets/img/foto/malik-7.jpg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-7.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">13 / 15</div>
                   
-                  <img src="assets/img/foto/malik-8.jpg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-8.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">14 / 15</div>
                   
-                  <img src="assets/img/foto/malik-9.jpg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-9.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div id="mySlides" class="mySlides">
                   <div class="numbertext">15 / 15</div>
                   
-                  <img src="assets/img/foto/malik-10.jpg" style="width:100%" alt="terabytee">
+                  <img id="imgMalik" src="malik-10.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <script>
+                  // img-malik-1
+                  
+
+
+                  // $(document).ready(function() {
+                    
+                    // var getAllImages = document.getElementById('imgMalik')[0].getAttribute('src');
+                    // var images = document.getElementById("imgMalik").getElementsByTagName("img");
+                    // var imgs = element.getElementsByTagName('imgMalik')[0];
+
+                    // let getid = document.getElementById('imgMalik');
+                    // let getAttr = imgMalik.getAttribute('src');
+
+                    var getid = document.getElementById('imgMalik');
+                    var imgTags = document.getElementsByTagName('img');
+                    // const imgTags = document.getElementsByClassName('mySlides');
+
+                    for (var i = 0; i < imgTags.length; i++) {
+                        var imgTag = imgTags[i];
+
+                        var imgId = imgTag.getAttribute('id');
+                        var imgSrc = imgTag.getAttribute('src');
+                        
+                        if(imgId == 'imgMalik'){
+                          var pathImage = 'assets/img/foto/';
+                          var newSrc = imgTag.setAttribute('src',pathImage + imgSrc);
+                        }else {
+                          var pathImage = 'assets/img/';
+                          var newSrc = imgTag.setAttribute('src',pathImage + imgSrc);
+                        }
+                            // imgSrc.pathImage + imgTag;
+
+                            // imgTag.setAttribute("src",pathImage + imgSrc);
+
+                        // alert(imgSrc);
+                    }
+                    
+
+
+                    // var getAllImages = document.getElementById('imgMalik').getAttribute('src');
+                    // const img = document.getElementById("imgMalik");
+                    // img.src = pathImage + getAllImages;
+
+                    
+                  // });
+
+                  // imageid = document.getElementById('imgMalik').src;
+                  // 
+                  // var imgsrc = document.getElementById("imgMalik").src;
+                  // imageid.src = pathImage + "malik-4.jpeg";
+                  // document.getElementById("imgMalik").src= pathImage+getAttr;
+
+                  // alert(imgTags);
+
+                  
+                </script>
 
                 <!-- <div class="caption-container">
                   <p id="caption"></p>

@@ -15,35 +15,6 @@
 
   }
 
-  // function base64_encode_image ($filename=string,$filetype=string,$filepath=string) {
-
-  //   // $path = 'assets/img/foto/malik-4.jpeg';
-  //   // $img_path = 'assets/img/foto/malik-4.jpeg';
-                
-  //   $image              = ($filename);
-  //   $theme_image        = ($filepath.$image);
-  //   $bin_string         = file_get_contents("$theme_image"); 
-  //   $theme_image_enc    = base64_encode($bin_string); 
-
-  //   $WIDTH      = 400; // The size of your new image
-  //   $HEIGHT     = 300;  // The size of your new image
-  //   $QUALITY    = 100; //The quality of your new image
-  //   $org_w      = 850;
-  //   $org_h      = 660;
-
-  //   $theme_image_little     = imagecreatefromstring(base64_decode($theme_image_enc));
-  //   $image_little           = imagecreatetruecolor($WIDTH, $HEIGHT);
-  //   imagecopyresampled($image_little, $theme_image_little, 0, 0, 0, 0, $WIDTH, $HEIGHT, $org_w, $org_h);
-  //   ob_start();
-  //   imagepng($image_little);
-  //   $contents =  ob_get_contents();
-  //   ob_end_clean();
-
-  //   // $theme_image_enc_little = base64_encode($contents);
-  //   return $theme_image_enc_little = base64_encode($contents);
-  //   // var_dump($theme_image_enc);
-  // }
-
   function base64_encode_image_size ($filename=string) {
 
     $fileimg = $filename;
@@ -66,10 +37,9 @@
     return $elements;
   }
 
-  // function resizeImage($filename){
-  //   $ret = base64_encode(file_get_contents($filename));
-  //   return $ret;
-  // }
+  function convertImg($string) {
+    return preg_replace('/((https?):\/\/(\S*)\.(jpg|gif|png)(\?(\S*))?(?=\s|$|\pP))/i', '<img src="$1" />', $string);
+  }
 
   function encrypt($string) {
     return strtr(base64_encode($string), '+/=', '-_,');
