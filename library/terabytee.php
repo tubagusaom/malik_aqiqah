@@ -13,6 +13,38 @@
         return 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
     }
   }
+  
+  function base64_decode_image($base64Img){
+  $im = imagecreatefromstring($base64Img);
+    if ($im !== false){
+    
+$h=20;
+$w=20;
+
+        $width = imagesx($im);
+        $height = imagesy($im);
+        $r = $width / $height; // ratio of image
+
+        // calculating new size for maintain ratio of image
+        if ($w/$h > $r) {
+            $newwidth = $h*$r; 
+            $newheight = $h;
+        } else {
+            $newheight = $w/$r;
+            $newwidth = $w;
+        }
+
+        $dst = imagecreatetruecolor($newwidth, $newheight);
+        imagecopyresampled($dst, $im, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
+        imagedestroy($im);
+
+        $fileName  = 'img'.date('Ymd').'.jpeg';
+        $filepath =  $fileName  ;
+        imagejpeg($dst,$filepath);
+
+        imagedestroy($dst);
+        return $fileName;
+  }}
 
   function base64_encode_image_size ($filename=string) {
 

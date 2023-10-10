@@ -58,7 +58,7 @@
             <div class="text-center card p-4">
               <div class="mb-3" style="color: #093b58">
                 <div class="text-center">
-                  <img src="<?=base64_encode_image('logo-malik.png','png','assets/img/')?>" class="img-fluid w-50"/>
+                  <img src="<?=(base64_encode_image('logo-malik.png','png','assets/img/'))?>" class="img-fluid w-50"/>
                 </div>
                 <h1 class="mt-4 fonts aos-init aos-animate" data-aos="fade-up">Malik</h1>
                 <div class="my-3">Akan Segera Melangsungkan Aqiqah</div>
