@@ -181,99 +181,162 @@
               </div>
 
               <?php
-                // $b64image = base64_encode_image('malik-4.jpeg','jpeg');
-                //
-                // $base64size = base64_encode_image_size('malik-1.jpeg');
-                //
-                // $loadimg = decrypt(encrypt($b64image));
+                // header("Content-type: image/jpeg");
+                // $imagePath = 'assets/img/foto/malik-4.jpeg';
+                // $imageResource = imagecreatefromjpeg($imagePath);
+                
+                // $path = 'assets/img/foto/malik-4.jpeg';
 
-                // echo resizeImage('resize.php?filename=1.png&w=50&h=50');
+                // $img_path = 'assets/img/foto/malik-4.jpeg';
+                
+                
+                // Open as a file
+                // $size_info1 = getimagesize($img_path);
 
+                // Or open as a string
+                // $dataimg       = file_get_contents($img_path);
+                // $size_info2 = getimagesizefromstring($dataimg);
 
-                // echo $loadimg;
-
-                // var_dump ($loadimg . '<br>' . $base64size);
+                // echo $string;
+                // var_dump ($size_info1);
 
               ?>
 
+              
+    
               <div class="container mt-3">
                 <div class="mySlides">
                   <div class="numbertext">1 / 15</div>
-                  <img src="<?=base64_encode_image('malik-4.jpeg','jpeg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img id="imgMalik" src="<?=base64_encode_image('malik-4.jpeg','jpeg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-4.jpeg" style="width:100%" alt="terabytee">
+                  <!-- <img id="imgmalik" alt=""> -->
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">2 / 15</div>
-                  <img src="<?=base64_encode_image('malik-2.jpeg','jpeg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-2.jpeg','jpeg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-2.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">3 / 15</div>
-                  <img src="<?=base64_encode_image('malik-3.jpeg','jpeg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-3.jpeg','jpeg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-3.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">4 / 15</div>
-                  <img src="<?=base64_encode_image('malik-1.jpeg','jpeg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-1.jpeg','jpeg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-1.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">5 / 15</div>
-                  <img src="<?=base64_encode_image('malik-5.jpeg','jpeg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-5.jpeg','jpeg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-5.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">6 / 15</div>
-                  <img class="radius-10" src="<?=base64_encode_image('malik-1.jpg','jpg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img class="radius-10" src="<?=base64_encode_image('malik-1.jpg','jpg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-1.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">7 / 15</div>
-                  <img src="<?=base64_encode_image('malik-2.jpg','jpg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-2.jpg','jpg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-2.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">8 / 15</div>
-                  <img src="<?=base64_encode_image('malik-3.jpg','jpg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-3.jpg','jpg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-3.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">9 / 15</div>
-                  <img src="<?=base64_encode_image('malik-4.jpg','jpg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-4.jpg','jpg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-4.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">10 / 15</div>
-                  <img src="<?=base64_encode_image('malik-5.jpg','jpg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-5.jpg','jpg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-5.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">11 / 15</div>
-                  <img src="<?=base64_encode_image('malik-6.jpg','jpg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-6.jpg','jpg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-6.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">12 / 15</div>
-                  <img src="<?=base64_encode_image('malik-7.jpg','jpg')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-7.jpg','jpg')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-7.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">13 / 15</div>
-                  <img src="<?=base64_encode_image('malik-8.jpg','jpg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-8.jpg','jpg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-8.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">14 / 15</div>
-                  <img src="<?=base64_encode_image('malik-9.jpg','jpg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-9.jpg','jpg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-9.jpg" style="width:100%" alt="terabytee">
                 </div>
 
-                <div class="mySlides">
+                <div id="mySlides" class="mySlides">
                   <div class="numbertext">15 / 15</div>
-                  <img src="<?=base64_encode_image('malik-10.jpg','jpg','assets/img/foto/')?>" style="width:100%">
+                  <!-- <img src="<?=base64_encode_image('malik-10.jpg','jpg','assets/img/foto/')?>" style="width:100%"> -->
+                  <img src="assets/img/foto/malik-10.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div id="testMalik"></div>
+
+                <script>
+                  // $doc = new DOMDocument();
+                  // $doc->loadHTML($html);
+                  // $elements = $doc->getElementsById('imgMalik1');
+
+                  base64String = document.getElementById('imgMalik').src;
+
+                  var stringLength = base64String.length - 'data:image/png;base64,'.length;
+
+                  var sizeInBytes = 4 * Math.ceil((stringLength / 3))*0.5624896334383812;
+                  var sizeInKb=sizeInBytes/1000;
+
+                  // const img = 'data:image/png;base64,aBdiVBORw0fKGgoAAA';
+
+                  // var buffer = Buffer.from(base64String.substring(base64String.indexOf(',') + 1));
+
+                  // alert("Byte length: " + buffer.length);
+                  // alert("MB: " + buffer.length / 1e+6);
+
+                  // document.getElementById("testMalik").innerHTML = stringLength;
+
+
+                  const MAX_WIDTH = 320;
+                  const MAX_HEIGHT = 180;
+                  const MIME_TYPE = "image/jpeg";
+                  const QUALITY = 0.7;
+
+                  const input = document.getElementById("imgMalik");
+
+
+                  // alert(blobURL);
+
+                  // alert("Sample is: " + str);
+
+                  // alert(compressed);
+                </script>
 
                 <!-- <div class="caption-container">
                   <p id="caption"></p>

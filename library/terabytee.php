@@ -12,43 +12,41 @@
         $imgbinary = fread(fopen($fileimg, "r"), filesize($fileimg));
         return 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
     }
+
   }
-  
-  function base64_decode_image($base64Img){
-  $im = imagecreatefromstring($base64Img);
-    if ($im !== false){
-    
-$h=20;
-$w=20;
 
-        $width = imagesx($im);
-        $height = imagesy($im);
-        $r = $width / $height; // ratio of image
+  // function base64_encode_image ($filename=string,$filetype=string,$filepath=string) {
 
-        // calculating new size for maintain ratio of image
-        if ($w/$h > $r) {
-            $newwidth = $h*$r; 
-            $newheight = $h;
-        } else {
-            $newheight = $w/$r;
-            $newwidth = $w;
-        }
+  //   // $path = 'assets/img/foto/malik-4.jpeg';
+  //   // $img_path = 'assets/img/foto/malik-4.jpeg';
+                
+  //   $image              = ($filename);
+  //   $theme_image        = ($filepath.$image);
+  //   $bin_string         = file_get_contents("$theme_image"); 
+  //   $theme_image_enc    = base64_encode($bin_string); 
 
-        $dst = imagecreatetruecolor($newwidth, $newheight);
-        imagecopyresampled($dst, $im, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
-        imagedestroy($im);
+  //   $WIDTH      = 400; // The size of your new image
+  //   $HEIGHT     = 300;  // The size of your new image
+  //   $QUALITY    = 100; //The quality of your new image
+  //   $org_w      = 850;
+  //   $org_h      = 660;
 
-        $fileName  = 'img'.date('Ymd').'.jpeg';
-        $filepath =  $fileName  ;
-        imagejpeg($dst,$filepath);
+  //   $theme_image_little     = imagecreatefromstring(base64_decode($theme_image_enc));
+  //   $image_little           = imagecreatetruecolor($WIDTH, $HEIGHT);
+  //   imagecopyresampled($image_little, $theme_image_little, 0, 0, 0, 0, $WIDTH, $HEIGHT, $org_w, $org_h);
+  //   ob_start();
+  //   imagepng($image_little);
+  //   $contents =  ob_get_contents();
+  //   ob_end_clean();
 
-        imagedestroy($dst);
-        return $fileName;
-  }}
+  //   // $theme_image_enc_little = base64_encode($contents);
+  //   return $theme_image_enc_little = base64_encode($contents);
+  //   // var_dump($theme_image_enc);
+  // }
 
   function base64_encode_image_size ($filename=string) {
 
-    $fileimg = 'assets/img/foto/'.$filename;
+    $fileimg = $filename;
 
     $size_info1 = getimagesize($fileimg);
 
@@ -58,23 +56,14 @@ $w=20;
     return $size_info2;
   }
 
-  function loadImage ($fileimg) {
-    $file = 'assets/img/foto/'.$fileimg;
+  function pregmatchall ($fileimg) {
+    $html = '<img src="'.$fileimg.'" style="width:100%">';
 
-    $data = getimagesize($file);
-        die(var_export($data));
-    switch($data["mime"]){
-        case "image/jpeg":
-            $im = imagecreatefromjpeg($file);
-            break;
-        case "image/png":
-            $im = imagecreatefrompng($file);
-            break;
-        default:
-            throw new Exception('Img Type not managed');
-    }
+    preg_match_all('/<img.*?src=[\'"](.*?)[\'"].*?>/i', $html, $matches);
 
-    return $im;
+    $elements = $matches[1];
+    // var_dump($matches);
+    return $elements;
   }
 
   // function resizeImage($filename){
