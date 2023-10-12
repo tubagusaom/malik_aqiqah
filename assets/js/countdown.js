@@ -1,11 +1,11 @@
-// Tetapkan tanggal kita menghitung mundur
-// var tanggalAwal = new Date("13 October 2023 19:00:00").getTime();
-
 document.getElementById("demo").replaceChildren();
 // document.getElementById("demo").reset();
 // cache.reset();
 // cache.delete();
 // localStorage.clear();
+
+// Tetapkan tanggal kita menghitung mundur
+// var tanggalAwal = new Date("13 October 2023 19:00:00").getTime();
 
 var tanggalAwal = new Date("13 October 2023 02:42:00").getTime();
 var tanggalAkhir  = new Date("13 October 2023 03:05:00").getTime();
