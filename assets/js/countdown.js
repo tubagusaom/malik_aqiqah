@@ -1,27 +1,41 @@
-// Set the date we're counting down to
-var countDownDate = new Date("12 October 2023 19:00:00").getTime();
+// Tetapkan tanggal kita menghitung mundur
+// var tanggalAwal = new Date("13 October 2023 19:00:00").getTime();
 
-// Update the count down every 1 second
+var tanggalAwal = new Date("13 October 2023 02:42:00").getTime();
+var tanggalAkhir  = new Date("13 October 2023 02:46:00").getTime();
+
+var xxx =  new Date("13 October 2023 02:26:00").getTime();
+
+// Perbarui hitungan mundur setiap 1 detik
 var x = setInterval(function () {
 
-// Get today's date and time
-var now = new Date().getTime();
+  // Dapatkan tanggal dan waktu hari ini
+  var sekarang = new Date().getTime();
 
-// Find the distance between now and the count down date
-var distance = countDownDate - now;
+  // var berlangsung = new Date().getTime();
 
-// Time calculations for days, hours, minutes and seconds
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Temukan jarak antara sekarang dan tanggal hitung mundur
+  var jarak = tanggalAwal - sekarang;
 
-// Display the result in the element with id="demo"
-document.getElementById("demo").innerHTML = days + " Hari " + hours + " Jam " +minutes + " Menit " + seconds + " Detik ";
+  var berlangsung = tanggalAkhir - sekarang;
 
-// If the count down is finished, write some text
-if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "BERLANGSUNG";
-    }
+  // Perhitungan waktu untuk hari, jam, menit dan detik
+  var hari = Math.floor(jarak / (1000 * 60 * 60 * 24));
+  var jam = Math.floor((jarak % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var menit = Math.floor((jarak % (1000 * 60 * 60)) / (1000 * 60));
+  var detik = Math.floor((jarak % (1000 * 60)) / 1000);
+
+  // Tampilkan hasilnya di elemen dengan id="demo"
+  document.getElementById("demo").innerHTML = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
+  // document.getElementById("tbDate").innerHTML = "Awal = " + tanggalAwal + "<br> Akhir = " + tanggalAkhir + "<br> berlangsung = " + berlangsung + "<br> jarak =" + jarak;
+
+  // Jika hitungan mundur selesai, tulis beberapa teks
+  if (jarak < 0 && berlangsung > 0) {
+      document.getElementById("demo").innerHTML = "ACARA BERLANGSUNG";
+  }
+  else if (jarak < berlangsung) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "<font style='color:#bbb'>ACARA SELESAI</font>";
+  }
+
 }, 1000);

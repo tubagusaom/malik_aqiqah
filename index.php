@@ -92,6 +92,7 @@
                 <h3 class="text-black">Assalamu'alaikum Wr Wb</h3>
                 Dengan rahmat Allah yang maha kuasa <br> insha Allah kami akan melangsungkan Aqiqah
                 <h5 class="mb-0 text-black my-3" id="demo"></h5>
+                <!-- <h6 class="mb-0 text-black my-3" id="tbDate"></h6> -->
               </div>
               <div class="row my-4 justify-content-center">
                 <div class="col-md-8">
@@ -199,25 +200,25 @@
 
                 <div class="mySlides">
                   <div class="numbertext">2 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-2.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">3 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-3.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">4 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-1.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">5 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-5.jpeg" style="width:100%" alt="terabytee">
                 </div>
 
@@ -229,55 +230,55 @@
 
                 <div class="mySlides">
                   <div class="numbertext">7 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-2.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">8 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-3.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">9 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-4.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">10 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-5.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">11 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-6.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">12 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-7.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">13 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-8.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">14 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-9.jpg" style="width:100%" alt="terabytee">
                 </div>
 
                 <div id="mySlides" class="mySlides">
                   <div class="numbertext">15 / 15</div>
-                  
+
                   <img id="imgMalik" src="malik-10.jpg" style="width:100%" alt="terabytee">
                 </div>
 
@@ -286,11 +287,11 @@
 
                 <script>
                   // img-malik-1
-                  
+
 
 
                   // $(document).ready(function() {
-                    
+
                     // var getAllImages = document.getElementById('imgMalik')[0].getAttribute('src');
                     // var images = document.getElementById("imgMalik").getElementsByTagName("img");
                     // var imgs = element.getElementsByTagName('imgMalik')[0];
@@ -307,7 +308,7 @@
 
                         var imgId = imgTag.getAttribute('id');
                         var imgSrc = imgTag.getAttribute('src');
-                        
+
                         if(imgId == 'imgMalik'){
                           var pathImage = 'assets/img/foto/';
                           var newSrc = imgTag.setAttribute('src',pathImage + imgSrc);
@@ -321,25 +322,25 @@
 
                         // alert(imgSrc);
                     }
-                    
+
 
 
                     // var getAllImages = document.getElementById('imgMalik').getAttribute('src');
                     // const img = document.getElementById("imgMalik");
                     // img.src = pathImage + getAllImages;
 
-                    
+
                   // });
 
                   // imageid = document.getElementById('imgMalik').src;
-                  // 
+                  //
                   // var imgsrc = document.getElementById("imgMalik").src;
                   // imageid.src = pathImage + "malik-4.jpeg";
                   // document.getElementById("imgMalik").src= pathImage+getAttr;
 
                   // alert(imgTags);
 
-                  
+
                 </script>
 
                 <!-- <div class="caption-container">
