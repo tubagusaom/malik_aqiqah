@@ -2,7 +2,7 @@
 // var tanggalAwal = new Date("13 October 2023 19:00:00").getTime();
 
 var tanggalAwal = new Date("13 October 2023 02:42:00").getTime();
-var tanggalAkhir  = new Date("13 October 2023 02:46:00").getTime();
+var tanggalAkhir  = new Date("13 October 2023 03:00:00").getTime();
 
 var xxx =  new Date("13 October 2023 02:26:00").getTime();
 
@@ -11,8 +11,6 @@ var x = setInterval(function () {
 
   // Dapatkan tanggal dan waktu hari ini
   var sekarang = new Date().getTime();
-
-  // var berlangsung = new Date().getTime();
 
   // Temukan jarak antara sekarang dan tanggal hitung mundur
   var jarak = tanggalAwal - sekarang;
