@@ -5,10 +5,8 @@ document.getElementById("demo").replaceChildren();
 // localStorage.clear();
 
 // Tetapkan tanggal kita menghitung mundur
-// var tanggalAwal = new Date("13 October 2023 19:00:00").getTime();
-
-var tanggalAwal = new Date("13 October 2023 02:42:00").getTime();
-var tanggalAkhir  = new Date("13 October 2023 03:05:00").getTime();
+var tanggalAwal   = new Date("12 October 2023 19:00:00").getTime();
+var tanggalAkhir  = new Date("13 October 2023 12:00:00").getTime();
 
 var xxx =  new Date("13 October 2023 02:26:00").getTime();
 
@@ -35,7 +33,7 @@ var x = setInterval(function () {
 
   // Jika hitungan mundur selesai, tulis beberapa teks
   if (jarak < 0 && berlangsung > 0) {
-      document.getElementById("demo").innerHTML = "ACARA BERLANGSUNG";
+      document.getElementById("demo").innerHTML = "<font style='color:#aaa'>ACARA BERLANGSUNG</font>";
   }
   else if (jarak < berlangsung) {
       clearInterval(x);
