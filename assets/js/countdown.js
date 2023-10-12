@@ -29,7 +29,8 @@ var x = setInterval(function () {
 
   // Jika hitungan mundur selesai, tulis beberapa teks
   if (jarak < 0 && berlangsung > 0) {
-      localStorage.clear()
+      localStorage.clear();
+      // location.reload(true);
       document.getElementById("demo").innerHTML = "ACARA BERLANGSUNG";
   }
   else if (jarak < berlangsung) {
