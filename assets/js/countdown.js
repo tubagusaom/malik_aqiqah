@@ -84,14 +84,13 @@ var x = setInterval(function () {
       // const mySet = document.getElementById("demo").innerHTML = "<font style='color:#aaa'>ACARA BERLANGSUNG</font>";
       // new Set('terabytee');
 
-      // tb.remove();
-      tb.textContent = "ACARA BERLANGSUNG";
+      tb.remove();
 
-      // tbText.textContent = "ACARA BERLANGSUNG";
+      tbText1.textContent = "ACARA BERLANGSUNG";
 
-      // var tb = terabytee.appendChild(tbDate);
-      // tb.setAttribute("id", "tbDate");
-      tb.setAttribute("style", "color:#aaa");
+      var text1 = terabytee.appendChild(tbText1);
+      text1.setAttribute("id", "tbDate");
+      text1.setAttribute("style", "color:#aaa");
       // const node = document.createAttribute("class");
       // node.value = "democlass";
 
@@ -104,16 +103,16 @@ var x = setInterval(function () {
       // const mySet = document.getElementById("demo").innerHTML = "<font style='color:#bbb'>ACARA SELESAI</font>";
       // new Set(mySet);
 
-      // tb.remove();
-      //
-      // tbText.textContent = "ACARA SELESAI";
-      //
-      // var tb = terabytee.appendChild(tbText);
-      // tb.setAttribute("id", "tbText");
-      // tb.setAttribute("style", "color:#bbb");
+      tbText1.remove();
 
-      tbDate.textContent = "ACARA SELESAI";
-      tb.setAttribute("style", "color:#bbb");
+      tbText2.textContent = "ACARA SELESAI";
+
+      var text2 = terabytee.appendChild(tbText2);
+      text2.setAttribute("id", "tbDate");
+      text2.setAttribute("style", "color:#bbb");
+
+      // tbDate.textContent = "ACARA SELESAI";
+      // tb.setAttribute("style", "color:#bbb");
   }
 
 }, 1000);
