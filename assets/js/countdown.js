@@ -1,14 +1,25 @@
-document.getElementById("demo").replaceChildren();
-// document.getElementById("demo").reset();
+
+const terabytee = document.getElementById("teraBytee");
+// const tbdiv = document.getElementById("tbDiv");
+var tbDate = document.createElement('terabytee');
+var tbText = document.createElement('terabytee');
+
+// tb.removeChild(tb.firstChild);
+
+// tbdiv.remove();
+// tb.innerHTML = '<p style="color:black">This is some HTML code</p>';
+
 // cache.reset();
 // cache.delete();
 // localStorage.clear();
+
+// alert('ok');
 
 // Tetapkan tanggal kita menghitung mundur
 var tanggalAwal   = new Date("12 October 2023 19:00:00").getTime();
 var tanggalAkhir  = new Date("13 October 2023 12:00:00").getTime();
 
-var xxx =  new Date("13 October 2023 02:26:00").getTime();
+// var xxx =  new Date("13 October 2023 02:26:00").getTime();
 
 // Perbarui hitungan mundur setiap 1 detik
 var x = setInterval(function () {
@@ -27,17 +38,81 @@ var x = setInterval(function () {
   var menit = Math.floor((jarak % (1000 * 60 * 60)) / (1000 * 60));
   var detik = Math.floor((jarak % (1000 * 60)) / 1000);
 
+  tbDate.textContent = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
+
+  var tb = terabytee.appendChild(tbDate);
+  tb.setAttribute("id", "tbDate");
+
+  // const tbdiv = document.getElementById("tbDiv");
+  // tbdiv.innerHTML = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
+
   // Tampilkan hasilnya di elemen dengan id="demo"
-  document.getElementById("demo").innerHTML = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
+  // const mySet = document.getElementById("demo").innerHTML = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
+
+  // tbdiv.remove();
+  // terabytee.removeChild(terabytee.firstElementChild);
+
+
+  // terabytee.removeChild(tbDate);
+
+  // tb.remove();
+  // terabytee.removeChild(terabytee);
+  // const newNode = document.createTextNode(tbDate);
+
+  // terabytee.innerHTML = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
+
+  // alert('ok');
+
   // document.getElementById("tbDate").innerHTML = "Awal = " + tanggalAwal + "<br> Akhir = " + tanggalAkhir + "<br> berlangsung = " + berlangsung + "<br> jarak =" + jarak;
 
   // Jika hitungan mundur selesai, tulis beberapa teks
   if (jarak < 0 && berlangsung > 0) {
-      document.getElementById("demo").innerHTML = "<font style='color:#aaa'>ACARA BERLANGSUNG</font>";
+
+    // myId.removeChild(myId.firstChild);
+    // myId.appendChild(b);
+
+    // var terabytee = document.createElement('terabytee');
+    // terabytee.textContent = 'terabytee';
+    // myId.appendChild(terabytee);
+    // new Set(terabytee);
+
+    // alert('ok');
+    // myId.innerHTML = 'terabytee';
+    // document.getElementById("demo").createElement('<h5 class="mb-0 text-black my-3" id="demo">terabytee</h5>');
+
+      // const mySet = document.getElementById("demo").innerHTML = "<font style='color:#aaa'>ACARA BERLANGSUNG</font>";
+      // new Set('terabytee');
+
+      // tb.remove();
+      tbDate.textContent = "ACARA BERLANGSUNG";
+
+      // tbText.textContent = "ACARA BERLANGSUNG";
+
+      // var tb = terabytee.appendChild(tbDate);
+      // tb.setAttribute("id", "tbDate");
+      tb.setAttribute("style", "color:#aaa");
+      // const node = document.createAttribute("class");
+      // node.value = "democlass";
+
+      // alert('ok');
+
   }
   else if (jarak < berlangsung) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "<font style='color:#bbb'>ACARA SELESAI</font>";
+
+      // const mySet = document.getElementById("demo").innerHTML = "<font style='color:#bbb'>ACARA SELESAI</font>";
+      // new Set(mySet);
+
+      // tb.remove();
+      //
+      // tbText.textContent = "ACARA SELESAI";
+      //
+      // var tb = terabytee.appendChild(tbText);
+      // tb.setAttribute("id", "tbText");
+      // tb.setAttribute("style", "color:#bbb");
+
+      tbDate.textContent = "ACARA SELESAI";
+      tb.setAttribute("style", "color:#bbb");
   }
 
 }, 1000);
