@@ -43,7 +43,7 @@ var x = setInterval(function () {
   var menit = Math.floor((jarak % (1000 * 60 * 60)) / (1000 * 60));
   var detik = Math.floor((jarak % (1000 * 60)) / 1000);
 
-  tbDate.textContent = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
+  // tbDate.textContent = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
 
   // var tb = terabytee.appendChild(tbDate);
   // tb.setAttribute("id", "tbDate");
@@ -53,7 +53,7 @@ var x = setInterval(function () {
 
   // Tampilkan hasilnya di elemen dengan id="demo"
   // const mySet = document.getElementById("demo").innerHTML = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
-  demo.innerHTML = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
+  demo.innerHTML = "<terabyte>" + hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik </terabyte>";
 
   // tbdiv.remove();
   // terabytee.removeChild(terabytee.firstElementChild);
@@ -92,7 +92,7 @@ var x = setInterval(function () {
       // tb.remove();
       // demo.remove();
 
-      demo.innerHTML = "<font style='color:#aaa'>ACARA BERLANGSUNG</font>";
+      demo.innerHTML = "<terabyte style='color:#aaa'>ACARA BERLANGSUNG</terabyte>";
 
       // tbText1.textContent = "ACARA BERLANGSUNG";
       //
@@ -111,7 +111,7 @@ var x = setInterval(function () {
       // const mySet = document.getElementById("demo").innerHTML = "<font style='color:#bbb'>ACARA SELESAI</font>";
       // new Set(mySet);
 
-      demo.innerHTML = "<font style='color:#bbb'>ACARA SELESAI</font>";
+      demo.innerHTML = "<terabyte style='color:#bbb'>ACARA SELESAI</terabyte>";
 
       // tbText1.remove();
       //
