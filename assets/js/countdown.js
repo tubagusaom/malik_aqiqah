@@ -22,7 +22,7 @@ var tbText2 = document.createElement('terabytee');
 
 // Tetapkan tanggal kita menghitung mundur
 var tanggalAwal   = new Date("12 October 2023 19:00:00").getTime();
-var tanggalAkhir  = new Date("13 October 2023 07:00:00").getTime();
+var tanggalAkhir  = new Date("13 October 2023 12:00:00").getTime();
 
 // var xxx =  new Date("13 October 2023 02:26:00").getTime();
 
