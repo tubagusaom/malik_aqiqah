@@ -9,7 +9,7 @@ var tbText2 = document.createElement('terabytee');
 
 
 
-// tb.removeChild(tb.firstChild);
+// terabytee.removeChild(terabytee.firstChild);
 
 // tbdiv.remove();
 // tb.innerHTML = '<p style="color:black">This is some HTML code</p>';
