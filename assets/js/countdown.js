@@ -1,8 +1,9 @@
 
 const terabytee = document.getElementById("teraBytee");
 // const tbdiv = document.getElementById("tbDiv");
-var tbDate = document.createElement('div');
-var tbText = document.createElement('terabytee');
+var tbDate = document.createElement('terabytee');
+var tbText1 = document.createElement('terabytee');
+var tbText2 = document.createElement('terabytee');
 
 // tb.removeChild(tb.firstChild);
 
@@ -84,7 +85,7 @@ var x = setInterval(function () {
       // new Set('terabytee');
 
       // tb.remove();
-      tbDate.textContent = "ACARA BERLANGSUNG";
+      tb.textContent = "ACARA BERLANGSUNG";
 
       // tbText.textContent = "ACARA BERLANGSUNG";
 
