@@ -1,7 +1,7 @@
 
 const terabytee = document.getElementById("teraBytee");
 // const tbdiv = document.getElementById("tbDiv");
-var tbDate = document.createElement('terabytee');
+var tbDate = document.createElement('div');
 var tbText = document.createElement('terabytee');
 
 // tb.removeChild(tb.firstChild);
