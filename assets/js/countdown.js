@@ -1,9 +1,13 @@
 
 const terabytee = document.getElementById("teraBytee");
+const demo = document.getElementById('demo');
+
 // const tbdiv = document.getElementById("tbDiv");
 var tbDate = document.createElement('terabytee');
 var tbText1 = document.createElement('terabytee');
 var tbText2 = document.createElement('terabytee');
+
+
 
 // tb.removeChild(tb.firstChild);
 
@@ -18,7 +22,7 @@ var tbText2 = document.createElement('terabytee');
 
 // Tetapkan tanggal kita menghitung mundur
 var tanggalAwal   = new Date("12 October 2023 19:00:00").getTime();
-var tanggalAkhir  = new Date("13 October 2023 12:00:00").getTime();
+var tanggalAkhir  = new Date("13 October 2023 07:00:00").getTime();
 
 // var xxx =  new Date("13 October 2023 02:26:00").getTime();
 
@@ -41,14 +45,15 @@ var x = setInterval(function () {
 
   tbDate.textContent = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
 
-  var tb = terabytee.appendChild(tbDate);
-  tb.setAttribute("id", "tbDate");
+  // var tb = terabytee.appendChild(tbDate);
+  // tb.setAttribute("id", "tbDate");
 
   // const tbdiv = document.getElementById("tbDiv");
   // tbdiv.innerHTML = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
 
   // Tampilkan hasilnya di elemen dengan id="demo"
   // const mySet = document.getElementById("demo").innerHTML = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
+  demo.innerHTML = hari + " Hari " + jam + " Jam " +menit + " Menit " + detik + " Detik ";
 
   // tbdiv.remove();
   // terabytee.removeChild(terabytee.firstElementChild);
@@ -84,13 +89,16 @@ var x = setInterval(function () {
       // const mySet = document.getElementById("demo").innerHTML = "<font style='color:#aaa'>ACARA BERLANGSUNG</font>";
       // new Set('terabytee');
 
-      tb.remove();
+      // tb.remove();
+      // demo.remove();
 
-      tbText1.textContent = "ACARA BERLANGSUNG";
+      demo.innerHTML = "<font style='color:#aaa'>ACARA BERLANGSUNG</font>";
 
-      var text1 = terabytee.appendChild(tbText1);
-      text1.setAttribute("id", "tbDate");
-      text1.setAttribute("style", "color:#aaa");
+      // tbText1.textContent = "ACARA BERLANGSUNG";
+      //
+      // var text1 = terabytee.appendChild(tbText1);
+      // text1.setAttribute("id", "tbDate");
+      // text1.setAttribute("style", "color:#aaa");
       // const node = document.createAttribute("class");
       // node.value = "democlass";
 
@@ -103,13 +111,15 @@ var x = setInterval(function () {
       // const mySet = document.getElementById("demo").innerHTML = "<font style='color:#bbb'>ACARA SELESAI</font>";
       // new Set(mySet);
 
-      tbText1.remove();
+      demo.innerHTML = "<font style='color:#bbb'>ACARA SELESAI</font>";
 
-      tbText2.textContent = "ACARA SELESAI";
-
-      var text2 = terabytee.appendChild(tbText2);
-      text2.setAttribute("id", "tbDate");
-      text2.setAttribute("style", "color:#bbb");
+      // tbText1.remove();
+      //
+      // tbText2.textContent = "ACARA SELESAI";
+      //
+      // var text2 = terabytee.appendChild(tbText2);
+      // text2.setAttribute("id", "tbDate");
+      // text2.setAttribute("style", "color:#bbb");
 
       // tbDate.textContent = "ACARA SELESAI";
       // tb.setAttribute("style", "color:#bbb");

@@ -97,7 +97,9 @@
               <div class="text-center">
                 <h3 class="text-black">Assalamu'alaikum Wr Wb</h3>
                 Dengan rahmat Allah yang maha kuasa <br> insha Allah kami akan melangsungkan Aqiqah
-                <h5 class="mb-0 text-black my-3" id="teraBytee"></h5>
+                <h5 class="mb-0 text-black my-3" id="teraBytee">
+                  <terabytee id="demo"></terabytee>
+                </h5>
                 <!-- <h6 class="mb-0 text-black my-3" id="tbDate"></h6> -->
               </div>
               <div class="row my-4 justify-content-center">
